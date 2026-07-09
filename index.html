@@ -1,27 +1,50 @@
-<main>
-    <article>
-        <h2>Добро пожаловать в мой блог</h2>
-        <div class="meta">9 июля 2026</div>
-        <p>Это первый пост в моём новом блоге. Здесь я буду делиться своими мыслями о технологиях, программировании и жизни в целом.</p>
-        <p>Следите за обновлениями!</p>
-        <a href="#">Читать далее →</a>
-    </article>
-    
-    <article>
-        <h2>Почему я начал вести блог</h2>
-        <div class="meta">8 июля 2026</div>
-        <p>Ведение блога помогает структурировать мысли и делиться знаниями с другими. Это отличный способ учиться самому и помогать другим.</p>
-        <a href="#">Читать далее →</a>
-    </article>
-    
-    <article>
-        <h2>Мои планы на будущее</h2>
-        <div class="meta">7 июля 2026</div>
-        <p>В ближайшем будущем я планирую писать о веб-разработке, новых технологиях и интересных проектах, над которыми работаю.</p>
-        <a href="#">Читать далее →</a>
-    </article>
-</main>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мой блог</title>
+  <!-- Подключаем стили из файла style.css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Мой блог</h1>
+      <p>Пишу о том, что интересно</p>
+    </div>
+  </header>
 
-<footer>
-    <p>&copy; 2026 Мой Блог. Все права защищены.</p>
-</footer>
+  <main class="container content">
+    <!-- Пост 1 -->
+    <article class="post-card">
+      <h2>Первый пост: как я начал вести блог</h2>
+      <time datetime="2024-05-20">20 мая 2024</time>
+      <p>Это начало моего пути. Я решил писать о своих проектах, чтобы не забывать, как всё работало.</p>
+      <a href="#" class="read-more">Читать далее →</a>
+    </article>
+
+    <!-- Пост 2 -->
+    <article class="post-card">
+      <h2>Второй пост: любимые инструменты разработчика</h2>
+      <time datetime="2024-05-22">22 мая 2024</time>
+      <p>Расскажу про VS Code, Git и пару расширений, без которых я уже не могу жить.</p>
+      <a href="#" class="read-more">Читать далее →</a>
+    </article>
+
+    <!-- Пост 3 -->
+    <article class="post-card">
+      <h2>Третий пост: что почитать новичку</h2>
+      <time datetime="2024-05-25">25 мая 2024</time>
+      <p>Подборка книг и статей, которые помогли мне разобраться в основах.</p>
+      <a href="#" class="read-more">Читать далее →</a>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2024 Мой блог. Все права защищены.</p>
+    </div>
+  </footer>
+</body>
+</html>
