@@ -8,9 +8,10 @@ body {
   line-height: 1.6;
 }
 
+/* ИЗМЕНЕНО: Контейнер шире и по центру */
 .container {
-  max-width: 800px;
-  margin: 0 0 0 20px;
+  max-width: 960px; 
+  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -33,22 +34,25 @@ body {
   font-size: 1.1rem;
 }
 
-/* Основной контент */
+/* Основной контент - ИЗМЕНЕНО (Grid) */
 .content {
   padding: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 30px;
 }
 
-/* Карточка поста */
+/* Карточка поста - ИЗМЕНЕНО (убран margin-bottom) */
 .post-card {
   background: #ffffff;
   padding: 30px;
-  margin-bottom: 30px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  /* margin-bottom удален, теперь отступы делает gap в .content */
 }
 
 .post-card h2 {
-  margin-top: 20px; /* Чуть больше отступ, чтобы отделить от фото */
+  margin-top: 20px;
   margin-bottom: 10px;
   color: #000000;
 }
@@ -67,12 +71,12 @@ body {
 
 /* --- СТИЛИ ДЛЯ ФОТО --- */
 .post-image {
-  width: 100%;           /* Растягиваем на всю ширину контейнера */
-  height: auto;          /* Сохраняем пропорции */
-  border-radius: 8px;   /* Скругление углов */
-  object-fit: cover;     /* Чтобы картинка не сплющивалась */
-  margin-bottom: 20px;   /* Отступ снизу до заголовка */
-  display: block;        /* Убирает лишние отступы снизу у строчных элементов */
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  display: block;
 }
 /* ---------------------- */
 
