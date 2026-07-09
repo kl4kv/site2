@@ -8,7 +8,6 @@ body {
   line-height: 1.6;
 }
 
-/* Контейнер: ограничивает ширину контента и центрирует его */
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -49,7 +48,8 @@ body {
 }
 
 .post-card h2 {
-  margin-top: 0;
+  margin-top: 20px; /* Чуть больше отступ, чтобы отделить от фото */
+  margin-bottom: 10px;
   color: #2c3e50;
 }
 
@@ -65,7 +65,17 @@ body {
   margin-bottom: 20px;
 }
 
-/* Кнопка "Читать далее" */
+/* --- СТИЛИ ДЛЯ ФОТО --- */
+.post-image {
+  width: 100%;           /* Растягиваем на всю ширину контейнера */
+  height: auto;          /* Сохраняем пропорции */
+  border-radius: 8px;   /* Скругление углов */
+  object-fit: cover;     /* Чтобы картинка не сплющивалась */
+  margin-bottom: 20px;   /* Отступ снизу до заголовка */
+  display: block;        /* Убирает лишние отступы снизу у строчных элементов */
+}
+/* ---------------------- */
+
 .read-more {
   display: inline-block;
   color: #3498db;
@@ -79,7 +89,6 @@ body {
   text-decoration: underline;
 }
 
-/* Подвал */
 .site-footer {
   background-color: #333;
   color: #fff;
